@@ -11,26 +11,34 @@
 	<!-- img favicon -->
 	<link rel="shortcut icon" href="/img/img-logo/favicon.png" type="image/x-icon">
 
-	<!-- css custon -->
-	<link href="/css/style.css" rel="stylesheet">
+	<title>Área do aluno</title>
 
-	<title>IED - Área do aluno</title>
+	<!-- PICK ONE OF THE STYLES BELOW -->
+	<link href="css/modern.css" rel="stylesheet">
+	<link href="css/classic.css" rel="stylesheet">
+	<link href="css/dark.css" rel="stylesheet">
+	<link href="css/light.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
+
+	<!-- BEGIN SETTINGS -->
+	<!-- You can remove this after picking a style -->
 	<style>
 		body {
 			opacity: 0;
 		}
 	</style>
 	<script src="js/settings.js"></script>
-
 	<!-- END SETTINGS -->
 </head>
 
 <body>
+	<div class="splash active">
+		<div class="splash-icon"></div>
+	</div>
 
 	<div class="wrapper">
-
-		<!-- Navbar -->
+		<!-- Navbar lateral -->
 		<nav id="sidebar" class="sidebar">
 			<a href="index.html">
 				<img class="logo" src="/img/img-logo/logo.png" />
@@ -43,8 +51,10 @@
 					<div class="fw-bold">Alana Miller</div>
 				</div>
 				<div class="btn-group">
-					<button type="button" class="btn mb-1 btn-primary dropdown-toggle show" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Selecione o Curso</button>
-					<div class="dropdown-menu show" data-popper-placement="bottom-start" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 34px);">
+					<button type="button" class="btn mb-1 btn-primary dropdown-toggle show" data-bs-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="true">Selecione o Curso</button>
+					<div class="dropdown-menu show" data-popper-placement="bottom-start"
+						style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 34px);">
 						<a class="dropdown-item" href="#">matrícula 1</a>
 						<a class="dropdown-item" href="#">matrícula 2</a>
 					</div>
@@ -54,7 +64,12 @@
 
 					<li class="sidebar-item active">
 						<a data-bs-target="#dashboards" data-bs-toggle="collapse" class="sidebar-link">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play-circle align-middle me-2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+								fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								stroke-linejoin="round" class="feather feather-play-circle align-middle me-2">
+								<circle cx="12" cy="12" r="10"></circle>
+								<polygon points="10 8 16 12 10 16 10 8"></polygon>
+							</svg>
 							<i></i> <span class="align-middle">Aula ao vivo</span>
 						</a>
 						<ul id="dashboards" class="sidebar-dropdown list-unstyled collapse show"
@@ -106,7 +121,7 @@
 
 					<li class="sidebar-item">
 						<a data-bs-target="#ui" data-bs-toggle="collapse" class="sidebar-link collapsed">
-							<i class="align-middle me-2 fas fa-fw fa-pen"></i>	
+							<i class="align-middle me-2 fas fa-fw fa-pen"></i>
 							<span class="align-middle">Simulado / Provas</span>
 						</a>
 						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
@@ -131,7 +146,7 @@
 								class="align-middle">Clínica de Redação</span>
 						</a>
 						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Acessar</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="/clinica.html">Acessar</a></li>
 						</ul>
 					</li>
 
@@ -141,14 +156,18 @@
 								Estudos</span>
 						</a>
 						<ul id="tables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="tables-bootstrap.html">Acessar</a>
+							<li class="sidebar-item"><a class="sidebar-link" href="/planoEstudo.html">Acessar</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 		</nav>
+		<!-- Navbar lateral /end-->
+
 		<div class="main">
+
+			<!-- Navbar superior-->
 			<nav class="navbar navbar-expand navbar-theme">
 				<a class="sidebar-toggle d-flex me-2">
 					<i class="hamburger align-self-center"></i>
@@ -202,350 +221,433 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- Navbar /end -->
 
-			<!-- conteúdo / -->
+			<main>
 
-			<main class="content">
+				<div class="container">
 
-				<div class="container-fluid">
-
+					<!-- info usuário / -->
 					<div class="header">
 						<h1 class="header-title">
 							Seja bem-vindo(a), Alana Miller!
 						</h1>
+						<h5 class="text-light">Hora: 22:30:05</h5>
+						<h5 class="text-light">Data: 12/05/2029</h5>
+
 					</div>
 
-					<div class="row">
+					<!-- quadro de atualizações -->
+					<div class="config-form1">
 
-						<div class="col-xl-6 col-xxl-7">
-							<div class="card flex-fill w-100">
-								<div class="card-header">
-									<div class="card-actions float-end">
-										<a href="#" class="me-1">
-											<i class="align-middle" data-feather="refresh-cw"></i>
-										</a>
-										<div class="d-inline-block dropdown show">
-											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
-												<i class="align-middle" data-feather="more-vertical"></i>
-											</a>
-
-										</div>
-									</div>
-									<h5 class="card-title mb-0">Meu Desempenho</h5>
-								</div>
-								<div class="card-body py-3">
-									<div class="chart chart-sm">
-										<canvas id="chartjs-dashboard-line"></canvas>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xl-6 col-xxl-5 d-flex">
-							
-
-							<div class="w-100">
-
-								<!-- card localizador / -->
-								<div class="row">
-									<div class="col-sm-6">
-										<div class="card">
-											<div class="card-body">
-												<a href="/produtos-loja.html">
-												<div class="row">
-													<div class="col mt-0">
-														<h5 class="card-title">Loja online</h5>
-													</div>
-													<div class="col-auto">
-														<div class="avatar">
-															<div class="avatar-title rounded-circle bg-primary-dark">
-																<i class="align-middle" data-feather="truck"></i>
-															</div>
-														</div>
-													</div>
-												</div>
-												<h1 class="display-6 mt-2 mb-9">PM254589665BR</h1>
-												<div class="mb-0">
-													<span class="text-danger"> <i
-															class="mdi mdi-arrow-bottom-right"></i>Localize </span>seu
-													material
-												</div>
-											</a>
-											</div>
-										</div>
-									</div>
-
-									<!-- card financeiro / -->
-										<div class="col-sm-6">
-											<div class="card">
-												<div class="card-body">
-													<a href="/financeiro.html">	
-													<div class="row">
-														<div class="col mt-0">
-															<h5 class="card-title">Financeiro</h5>
-														</div>
-														<div class="col-auto">
-															<div class="avatar">
-																<div class="avatar-title rounded-circle bg-primary-dark">
-																	<i class="align-middle" data-feather="dollar-sign"></i>
-																</div>
-															</div>
-														</div>
-													</div>
-													<h1 class="display-5 mt-1 mb-3">R$ 99,90</h1>
-													<div class="mb-0">
-														<span class="text-success"> <i
-																class="mdi mdi-arrow-bottom-right"></i> Próxima</span>
-														parcela
-													</div>
-												</a>
-												</div>
-											</div>
-										</div>
- 								<!-- card financeiro /end -->
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- conteúdo /end -->
-
-					<!-- atualizações -->
-					<div class="row">
 						<div class="col-12 col-lg-8 col-xxl-9 d-flex">
 							<div class="card flex-fill">
-
 								<div class="card-header">
-									<div class="card-actions float-end">
-										<a href="#" class="me-1">
-											<i class="align-middle" data-feather="refresh-cw"></i>
-										</a>
-
-										<div class="d-inline-block dropdown show">
-											<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
-												<i class="align-middle" data-feather="more-vertical"></i>
-											</a>
-										</div>
-									</div>
 									<h5 class="card-title mb-0">Últimas atualizações</h5>
 								</div>
 
 								<table id="datatables-dashboard-projects" class="table table-striped my-0">
-
 									<thead>
 										<tr>
-											<th>Assunto</th>
+											<th>Matéria</th>
+											<th class="d-none d-xl-table-cell">Assunto</th>
 											<th class="d-none d-xl-table-cell">Data</th>
-											<th class="d-none d-xl-table-cell">Matéria</th>
+											<th>Status</th>
+											<th class="d-none d-md-table-cell">Ação</th>
 										</tr>
 									</thead>
 
 									<tbody>
 										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
 											<td>Gramática</td>
+											<td class="d-none d-xl-table-cell">Palavras complexas e suas...</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td><span class="badge bg-success">Visualizado</span></td>
+											<td class="d-none d-md-table-cell"><button class="btn mb-1 btn-primary"><i
+														class="far"></i> Acessar</button></td>
+
 										</tr>
 										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td>Gramática</td>
+											<td>Project Fireball</td>
+											<td class="d-none d-xl-table-cell">Palavras complexas e suas...</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td><span class="badge bg-danger">Não visualizado</span></td>
+											<td class="d-none d-md-table-cell"><button class="btn mb-1 btn-primary"><i
+														class="far"></i> Acessar</button></td>
 										</tr>
 										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
 											<td>Gramática</td>
+											<td class="d-none d-xl-table-cell">Palavras complexas e suas...</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td><span class="badge bg-success">Visualizado</span></td>
+											<td class="d-none d-md-table-cell"><button class="btn mb-1 btn-primary"><i
+														class="far"></i> Acessar</button></td>
 										</tr>
 										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
 											<td>Gramática</td>
+											<td class="d-none d-xl-table-cell">Palavras complexas e suas...</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td><span class="badge bg-danger">Não visualizado</span></td>
+											<td class="d-none d-md-table-cell"><button class="btn mb-1 btn-primary"><i
+														class="far"></i> Acessar</button></td>
 										</tr>
 										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
 											<td>Gramática</td>
+											<td class="d-none d-xl-table-cell">Palavras complexas e suas...</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td><span class="badge bg-success">Visualizado</span></td>
+											<td class="d-none d-md-table-cell"><button class="btn mb-1 btn-primary"><i
+														class="far"></i> Acessar</button></td>
 										</tr>
 										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
 											<td>Gramática</td>
-										</tr>
-										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td>Gramática</td>
-										</tr>
-										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td>Gramática</td>
-										</tr>
-										<tr>
-											<td class="d-none d-md-table-cell">Exercícios gramática</td>
-											<td class="d-none d-xl-table-cell">01/01/2021</td>
-											<td>Gramática</td>
+											<td class="d-none d-xl-table-cell">Palavras complexas e suas...</td>
+											<td class="d-none d-xl-table-cell">31/06/2021</td>
+											<td><span class="badge bg-success">Visualizado</span></td>
+											<td class="d-none d-md-table-cell"><button class="btn mb-1 btn-primary"><i
+														class="far"></i> Acessar</button></td>
 										</tr>
 									</tbody>
 								</table>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4 col-xxl-3 d-flex"></div>
-					</div>
-					<!-- atualizações /end-->
 
-					<!-- grafico desenpenho -->
-					<div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
-						<div class="card flex-fill w-100">
-							<div class="card-header">
-								<div class="card-actions float-end">
-									<a href="#" class="me-1">
-										<i class="align-middle" data-feather="refresh-cw"></i>
+						<div class="config-cards">
+
+							<!-- card cod -->
+							<div class="card">
+								<div class="card-body">
+									<a href="/produtos-loja.html">
+										<div class="row">
+											<div class="col mt-0">
+												<h5 class="card-title">Loja online</h5>
+											</div>
+											<div class="col-auto">
+												<div class="avatar">
+													<div class="avatar-title rounded-circle bg-primary-dark">
+														<i class="align-middle" data-feather="truck"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h1 class="display-6 mt-2 mb-9">PM254589665BR</h1>
+										<div class="mb-0">
+											<span class="text-danger"> <i
+													class="mdi mdi-arrow-bottom-right"></i>Localize </span>seu
+											material
+										</div>
 									</a>
-									<div class="d-inline-block dropdown show">
-										<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
-											<i class="align-middle" data-feather="more-vertical"></i>
-										</a>
-
-										<div class="dropdown-menu dropdown-menu-end">
-											<a class="dropdown-item" href="#">Action</a>
-											<a class="dropdown-item" href="#">Another action</a>
-											<a class="dropdown-item" href="#">Something else here</a>
-										</div>
-									</div>
 								</div>
-								<h5 class="card-title mb-0">Browser Usage</h5>
 							</div>
-							<div class="card-body d-flex">
-								<div class="align-self-center w-100">
-									<div class="py-3">
-										<div class="chart chart-xs">
-											<canvas id="chartjs-dashboard-pie"></canvas>
+
+							<!-- card financeiro -->
+							<div class="card">
+								<div class="card-body">
+									<a href="/financeiro.html">
+										<div class="row">
+											<div class="col mt-0">
+												<h5 class="card-title">Financeiro</h5>
+											</div>
+											<div class="col-auto">
+												<div class="avatar">
+													<div class="avatar-title rounded-circle bg-primary-dark">
+														<i class="align-middle" data-feather="dollar-sign"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h1 class="display-5 mt-1 mb-3">R$ 99,90</h1>
+										<div class="mb-0">
+											<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i>
+												Próxima</span>
+											parcela
+										</div>
+									</a>
+								</div>
+							</div>
+							<!-- card redação -->
+							<div class="card">
+								<div class="card-body">
+									<a href="/produtos-loja.html">
+										<div class="row">
+											<div class="col mt-0">
+												<h5 class="card-title">Redações</h5>
+											</div>
+											<div class="col-auto">
+												<div class="avatar">
+													<div class="avatar-title rounded-circle bg-primary-dark">
+														<i class="align-middle me-2 fas fa-fw fa-pen"></i>
+													</div>
+												</div>
+											</div>
+										</div>
+										<h1 class="display-5 mt-1 mb-3">4 Disponíveis</h1>
+										<div class="mb-0">
+											<span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i>
+												Tenente</span> Coronel
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+					<!-- grafico simulado / -->
+
+					<div class="config-grafic-simu">
+
+						<div class="col-5 col-lg-9">
+							<div class="config-graf-simu">
+								<div class="card">
+									<div class="card-header">
+										<h5 class="card-title">Estatística de simulado</h5><br>
+										<h6 class="card-subtitle text-muted">SUA MÉDIA É (7.4)</h6><br>
+										<h6 class="card-subtitle text-muted">SIMULADOS REALIZADOS (3 de 8)</h6>
+									</div>
+									<div class="card-body">
+										<div class="chart">
+											<div id="apexcharts-bar"></div>
 										</div>
 									</div>
-
-									<table class="table mb-0">
-										<tbody>
-											<tr>
-												<td><i class="fas fa-circle text-primary fa-fw"></i> Chrome</td>
-												<td class="text-end">4401</td>
-											</tr>
-											<tr>
-												<td><i class="fas fa-circle text-warning fa-fw"></i> Firefox</td>
-												<td class="text-end">4003</td>
-											</tr>
-											<tr>
-												<td><i class="fas fa-circle text-danger fa-fw"></i> IE</td>
-												<td class="text-end">1589</td>
-											</tr>
-										</tbody>
-									</table>
 								</div>
 							</div>
 						</div>
 
-						
-					</div>
-				<!-- grafico desenpenho /end -->
 
-				
+						<div class="consifg-grafic-temp">
+							<div class="col-12 col-md-6 col-xxl-12 d-flex order-2 order-xxl-3">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+										<div class="card-actions float-end">
+											<div class="d-inline-block dropdown show">
+												<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+													<i class="align-middle" data-feather="more-vertical"></i>
+												</a>
+												<div class="dropdown-menu dropdown-menu-end">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+												</div>
+											</div>
+										</div>
+										<h5 class="card-title mb-0">Tempo de aula</h5>
+									</div>
+									<div class="card-body d-flex">
+										<div class="align-self-center w-100">
+											<div class="py-3">
+												<div class="chart chart-xs">
+													<canvas id="chartjs-dashboard-pie"></canvas>
+												</div>
+											</div>
+											<table class="table mb-0">
+												<tbody>
+													<tr>
+														<td><i class="fas fa-circle text-primary fa-fw"></i> Assistido
+														</td>
+														<td class="text-end">350 h/a</td>
+													</tr>
+													<tr>
+														<td><i class="fas fa-circle text-warning fa-fw"></i> Não
+															assistido</td>
+														<td class="text-end">280 h/a</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- grafico redação -->
+					<div class="config-grafic-red">
+
+						<div class="col-9 col-lg-6">
+							<div class="card flex-fill w-100">
+								<div class="card-header">
+									<h5 class="card-title">Evolução nas redações</h5>
+									<h6 class="card-subtitle text-muted">Sua média nas redações é 7.5</h6>
+								</div>
+								<div class="card-body">
+									<div class="chart">
+										<div class="chartjs-size-monitor">
+											<div class="chartjs-size-monitor-expand">
+												<div class=""></div>
+											</div>
+											<div class="chartjs-size-monitor-shrink">
+												<div class=""></div>
+											</div>
+										</div>
+										<canvas id="chartjs-line" style="display: block; height: 300px; width: 680px;"
+											width="611" height="269" class="chartjs-render-monitor"></canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="config-ranking1">
+
+							<div class="col-6 col-lg-6 d-flex">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+										<div class="card-actions float-end">
+											<div class="d-inline-block dropdown show">
+												<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+													<i class="align-middle" data-feather="more-vertical"></i>
+												</a>
+
+												<div class="dropdown-menu dropdown-menu-end">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+												</div>
+											</div>
+										</div>
+										<h5 class="card-title mb-0">Ranking das redações</h5>
+									</div>
+									<div class="card-body d-flex w-100">
+										<div class="align-self-center chart chart-lg">
+											<canvas id="chartjs-dashboard-bar-alt"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="config-ranking2"></div>
+
+							<div class="col-6 col-lg-4 col-xxl-6 d-flex">
+								<div class="card flex-fill w-100">
+									<div class="card-header">
+										<div class="card-actions float-end">
+											<div class="d-inline-block dropdown show">
+												<a href="#" data-bs-toggle="dropdown" data-bs-display="static">
+													<i class="align-middle" data-feather="more-vertical"></i>
+												</a>
+
+												<div class="dropdown-menu dropdown-menu-end">
+													<a class="dropdown-item" href="#">Action</a>
+													<a class="dropdown-item" href="#">Another action</a>
+													<a class="dropdown-item" href="#">Something else here</a>
+												</div>
+											</div>
+										</div>
+										<h5 class="card-title mb-0">Ranking dos simulados</h5>
+									</div>
+									<div class="card-body d-flex w-100">
+										<div class="align-self-center chart chart-lg">
+											<canvas id="chartjs-dashboard-bar"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 			</main>
-
-			<!-- rodapé -->
-			<footer class="footer">
-				<div class="container-fluid">
-					<div class="row text-muted">
-						<div class="col-8 text-start">
-							<ul class="list-inline">
-								<li class="list-inline-item">
-									<a class="text-muted" href="https://api.whatsapp.com/send?1=pt_BR&phone=556141027804">Suporte</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-4 text-end">
-							<p class="mb-0">
-								&copy; 2021 - <a href="dashboard-default.html" class="text-muted">DConcursos</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<!-- rodapé /end -->
 		</div>
-	</div>
-	<!-- container /end-->
 
-	<!-- scripts -->
+	</div>
+
+	<!-- rodapé -->
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row text-muted">
+				<div class="col-8 text-start">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a class="text-muted"
+								href="https://api.whatsapp.com/send?1=pt_BR&phone=556141027804"><strong>SUPORTE</strong></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-4 text-end">
+					<p class="mb-0">
+						&copy; 2021 - <a href="dashboard-default.html" class="text-muted">DConcursos</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+	<svg width="0" height="0" style="position:absolute">
+		<defs>
+			<symbol viewBox="0 0 512 512" id="ion-ios-pulse-strong">
+				<path
+					d="M448 273.001c-21.27 0-39.296 13.999-45.596 32.999h-38.857l-28.361-85.417a15.999 15.999 0 0 0-15.183-10.956c-.112 0-.224 0-.335.004a15.997 15.997 0 0 0-15.049 11.588l-44.484 155.262-52.353-314.108C206.535 54.893 200.333 48 192 48s-13.693 5.776-15.525 13.135L115.496 306H16v31.999h112c7.348 0 13.75-5.003 15.525-12.134l45.368-182.177 51.324 307.94c1.229 7.377 7.397 11.92 14.864 12.344.308.018.614.028.919.028 7.097 0 13.406-3.701 15.381-10.594l49.744-173.617 15.689 47.252A16.001 16.001 0 0 0 352 337.999h51.108C409.973 355.999 427.477 369 448 369c26.511 0 48-22.492 48-49 0-26.509-21.489-46.999-48-46.999z">
+				</path>
+			</symbol>
+		</defs>
+	</svg>
+
 	<script src="js/app.js"></script>
+
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			// Line chart
-			new Chart(document.getElementById("chartjs-dashboard-line"), {
-				type: 'line',
-				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov",
-						"Dec"
-					],
-					datasets: [{
-							label: "Orders",
-							fill: true,
-							backgroundColor: window.theme.primary,
-							borderColor: window.theme.primary,
-							borderWidth: 2,
-							data: [3, 2, 3, 5, 6, 5, 4, 6, 9, 10, 8, 9]
-						},
-						{
-							label: "Sales ($)",
-							fill: true,
-							backgroundColor: "rgba(0, 0, 0, 0.05)",
-							borderColor: "rgba(0, 0, 0, 0.05)",
-							borderWidth: 2,
-							data: [5, 4, 10, 15, 16, 12, 10, 13, 20, 22, 18, 20]
-						}
-					]
+			// Bar chart
+			var options = {
+				chart: {
+					height: 350,
+					type: "bar",
+					stacked: true,
 				},
-				options: {
-					maintainAspectRatio: false,
-					legend: {
-						display: false
+				plotOptions: {
+					bar: {
+						horizontal: true,
 					},
-					tooltips: {
-						intersect: false
+				},
+				stroke: {
+					width: 1,
+					colors: ["#fff"]
+				},
+				series: [{
+						name: "Gramática",
+						data: [4, 5, 14, 7, 2, 3, 4]
+					}, {
+						name: "Inglês",
+						data: [5, 2, 3, 2, 3, 3, 2]
+					}, {
+						name: "Redação",
+						data: [4, 3, 5, 9, 6, 4, 2]
+					}, {
+						name: "Literatura",
+						data: [9, 7, 5, 8, 6, 9, 4]
 					},
-					hover: {
-						intersect: true
+					{
+						name: "História",
+						data: [9, 7, 5, 8, 6, 9, 4]
 					},
-					plugins: {
-						filler: {
-							propagate: false
-						}
-					},
-					elements: {
-						point: {
-							radius: 0
-						}
-					},
-					scales: {
-						xAxes: [{
-							reverse: true,
-							gridLines: {
-								color: "rgba(0,0,0,0.0)"
-							}
-						}],
-						yAxes: [{
-							ticks: {
-								stepSize: 5
-							},
-							display: true,
-							gridLines: {
-								color: "rgba(0,0,0,0)",
-								fontColor: "#fff"
-							}
-						}]
+					{
+						name: "Geografia",
+						data: [9, 7, 5, 8, 6, 9, 4]
+					}, {
+						name: "Matemática",
+						data: [5, 2, 9, 2, 5, 4, 0]
 					}
+				],
+				xaxis: {
+					categories: ['Simulado #1', 'Simulado #2', 'Simulado #3', 'Simulado #4', 'Simulado #5'],
+
+				},
+
+
+				fill: {
+					opacity: 1
+				},
+				legend: {
+					position: "top",
+					horizontalAlign: "left",
+					offsetX: 50
 				}
-			});
+			}
+			var chart = new ApexCharts(
+				document.querySelector("#apexcharts-bar"),
+				options
+			);
+			chart.render();
 		});
 	</script>
 
@@ -555,12 +657,11 @@
 			new Chart(document.getElementById("chartjs-dashboard-pie"), {
 				type: 'pie',
 				data: {
-					labels: ["Chrome", "Firefox", "IE", "Other"],
+					labels: ["Chrome", "Firefox", ],
 					datasets: [{
-						data: [4401, 4003, 1589],
+						data: [4401, 4003, ],
 						backgroundColor: [
 							window.theme.primary,
-							window.theme.warning,
 							window.theme.danger,
 							"#E8EAED"
 						],
@@ -581,20 +682,94 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			// Bar chart
-			new Chart(document.getElementById("chartjs-dashboard-bar"), {
-				type: 'bar',
+			// Line chart
+			new Chart(document.getElementById("chartjs-line"), {
+				type: "line",
 				data: {
-					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov",
-						"Dec"
+					labels: ["", "Redação 1", "Redação 2", "Redação 3", "Redação 4", "Redação 5", "Redação 6",
+						"",
+
 					],
 					datasets: [{
-						label: "This year",
+						label: "Sales ($)",
+						fill: true,
+						backgroundColor: "transparent",
+						borderColor: window.theme.primary,
+						data: [1, 2, 1584, 1892, 1487, 2223, 2966, 2448, 2905, 3838, 2917, 3327]
+					}, {
+						label: "Orders",
+						fill: true,
+						backgroundColor: "transparent",
+						borderColor: window.theme.tertiary,
+						borderDash: [4, 4],
+						data: [958, 724, 629, 883, 915, 1214, 1476, 1212, 1554, 2128, 1466, 1827]
+					}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						intersect: false
+					},
+					hover: {
+						intersect: true
+					},
+					plugins: {
+						filler: {
+							propagate: false
+						}
+					},
+					scales: {
+						xAxes: [{
+							reverse: true,
+							gridLines: {
+								color: "rgba(0,0,0,0.05)"
+							}
+						}],
+						yAxes: [{
+							ticks: {
+								stepSize: 500
+							},
+							display: true,
+							borderDash: [5, 5],
+							gridLines: {
+								color: "rgba(0,0,0,0)",
+								fontColor: "#fff"
+							}
+						}]
+					}
+				}
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar-alt"), {
+				type: "bar",
+				data: {
+					labels: ["Roberta", "Matheus", "Luiz", "Henrique", "Rafael", "João", "Lucas", "Sales",
+						"André", "Felipe",
+					],
+					datasets: [{
+						label: "Last year",
 						backgroundColor: window.theme.primary,
 						borderColor: window.theme.primary,
 						hoverBackgroundColor: window.theme.primary,
 						hoverBorderColor: window.theme.primary,
-						data: [54, 67, 41, 55, 62, 45, 55, 73, 60, 76, 48, 79],
+						data: [7, 6, 4, 5, 6, 5, 5, 7, 6, 7, 8, 9],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}, {
+						label: "This year",
+						backgroundColor: "#E8EAED",
+						borderColor: "#E8EAED",
+						hoverBackgroundColor: "#E8EAED",
+						hoverBorderColor: "#E8EAED",
+						data: [6, 6, 4, 8, 2, 1, 4, 5, 6, 9, 5, 6],
 						barPercentage: .75,
 						categoryPercentage: .5
 					}]
@@ -628,64 +803,52 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			var map = new jsVectorMap({
-				map: "world",
-				selector: "#world_map",
-				zoomButtons: true,
-				selectedRegions: [
-					'US',
-					'SA',
-					'DE',
-					'FR',
-					'CN',
-					'AU',
-					'BR',
-					'IN',
-					'GB'
-				],
-				regionStyle: {
-					initial: {
-						fill: '#e4e4e4',
-						"fill-opacity": 0.9,
-						stroke: 'none',
-						"stroke-width": 0,
-						"stroke-opacity": 0
-					},
-					selected: {
-						fill: window.theme.primary,
-					}
+			// Bar chart
+			new Chart(document.getElementById("chartjs-dashboard-bar"), {
+				type: 'bar',
+				data: {
+					labels: ["Roberta", "Matheus", "Luiz", "Henrique", "Rafael", "João", "Lucas", "Sales", ],
+					datasets: [{
+						label: "This year",
+						backgroundColor: window.theme.primary,
+						borderColor: window.theme.primary,
+						hoverBackgroundColor: window.theme.primary,
+						hoverBorderColor: window.theme.primary,
+						data: [6, 7, 4, 5, 6, 5, 5, 7, 6, 7, 8, 9],
+						barPercentage: .75,
+						categoryPercentage: .5
+					}]
 				},
-				zoomOnScroll: false
+				options: {
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					scales: {
+						yAxes: [{
+							gridLines: {
+								display: false
+							},
+							stacked: false,
+							ticks: {
+								stepSize: 20
+							}
+						}],
+						xAxes: [{
+							stacked: false,
+							gridLines: {
+								color: "transparent"
+							}
+						}]
+					}
+				}
 			});
-			window.addEventListener("resize", () => {
-				map.updateSize();
-			});
-			setTimeout(function () {
-				map.updateSize();
-			}, 250);
 		});
 	</script>
 
-	<script>
-		$(function () {
-			$('#datatables-dashboard-projects').DataTable({
-				pageLength: 6,
-				lengthChange: false,
-				bFilter: false,
-				autoWidth: false
-			});
-		});
-	</script>
 
-	<script>
-		$(function () {
-			$('#datetimepicker-dashboard').datetimepicker({
-				inline: true,
-				sideBySide: false,
-				format: 'L'
-			});
-		});
-	</script>
+
+
 
 </body>
 

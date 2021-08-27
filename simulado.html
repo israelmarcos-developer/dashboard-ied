@@ -18,10 +18,10 @@
 	<title>IED - Área do aluno</title>
 
 	<!-- PICK ONE OF THE STYLES BELOW -->
-	<!-- <link href="css/modern.css" rel="stylesheet"> -->
-	<!-- <link href="css/classic.css" rel="stylesheet"> -->
-	<!-- <link href="css/dark.css" rel="stylesheet"> -->
-	<!-- <link href="css/light.css" rel="stylesheet"> -->
+	<link href="css/modern.css" rel="stylesheet">
+	<link href="css/classic.css" rel="stylesheet">
+	<link href="css/dark.css" rel="stylesheet">
+	<link href="css/light.css" rel="stylesheet">
 
 	<!-- BEGIN SETTINGS -->
 	<!-- You can remove this after picking a style -->
@@ -156,7 +156,10 @@
 				</ul>
 			</div>
 		</nav>
+
 		<div class="main">
+
+			<!-- Navbar -->
 			<nav class="navbar navbar-expand navbar-theme">
 				<a class="sidebar-toggle d-flex me-2">
 					<i class="hamburger align-self-center"></i>
@@ -210,7 +213,6 @@
 					</ul>
 				</div>
 			</nav>
-			<!-- Navbar /end -->
 
 			<div class="row-simulado">
 
@@ -225,6 +227,7 @@
 
 							</h6>
 						</div>
+						
 						<table class="table">
 							<thead>
 								<tr>
@@ -245,9 +248,20 @@
 									<td class="d-none d-md-table-cell text-left">Não realizado</td>
 									<td class="d-none d-md-table-cell">s/n</td>
 									<td class="table-action">
-										<button class="btn mb-1 btn-primary">Preencher</button>
-										<button class="btn mb-1 btn-warning"></i> Redação</button>
-										<button class="btn mb-1 btn-danger"></i>Download</button>					
+										<div class="btn-group">
+											<button type="button" class="btn mb-1 btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Opções
+											</button>
+											<div class="dropdown-menu" style="">
+												<a class="dropdown-item" href="#">Realizar prova</a>
+												<a class="dropdown-item" href="#">Realizar Redação</a>
+												<a class="dropdown-item" href="#">Meu gabarito</a>
+												<a class="dropdown-item" href="#">Download gabarito</a>
+												<div class="dropdown-divider"></div>
+												<a class="dropdown-item" href="#">Ranking do simulado</a>
+											</div>
+										</div>
+									</td>								
 									</tr>
 									<tr>
 										<td>Simulado #2</td>
@@ -256,10 +270,20 @@
 										<td class="d-none d-md-table-cell text-left">Realizado</td>
 										<td class="d-none d-md-table-cell">9.08</td>
 										<td class="table-action">
-											<button class="btn mb-1 btn-warning"></i> Redação</button>
-											<button class="btn mb-1 btn-danger"></i>Download</button>					
-										</tr>
-									<tr>
+											<div class="btn-group">
+												<button type="button" class="btn mb-1 btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													Opções
+												</button>
+												<div class="dropdown-menu" style="">
+													<a class="dropdown-item" href="#">Realizar prova</a>
+													<a class="dropdown-item" href="#">Realizar Redação</a>
+													<a class="dropdown-item" href="#">Meu gabarito</a>
+													<a class="dropdown-item" href="#">Download gabarito</a>
+													<div class="dropdown-divider"></div>
+													<a class="dropdown-item" href="#">Ranking do simulado</a>
+												</div>
+											</div>
+										</td>								
 										<tr>
 											<td>Simulado #3</td>
 											<td>19/08/2020</td>
@@ -267,19 +291,21 @@
 											<td class="d-none d-md-table-cell text-left">Não realizado</td>
 											<td class="d-none d-md-table-cell">s/n</td>
 											<td class="table-action">
-												<button class="btn mb-1 btn-primary">Preencher</button>
-												<button class="btn mb-1 btn-warning"></i> Redação</button>
-												<button class="btn mb-1 btn-danger"></i>Download</button>					
-											</tr>
-											<tr>
-												<td>Simulado #4</td>
-												<td>19/08/2020</td>
-												<td class="d-none d-md-table-cell">19/08/2020</td>
-												<td class="d-none d-md-table-cell text-left">Realizado</td>
-												<td class="d-none d-md-table-cell">9.08</td>
-												<td class="table-action">
-												<button class="btn mb-1 btn-warning"></i> Redação</button>
-												<button class="btn mb-1 btn-danger"></i>Download</button>					
+												<div class="btn-group">
+													<button type="button" class="btn mb-1 btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														Opções
+													</button>
+													<div class="dropdown-menu" style="">
+														<a class="dropdown-item" href="#">Realizar prova</a>
+														<a class="dropdown-item" href="#">Realizar Redação</a>
+														<a class="dropdown-item" href="#">Meu gabarito</a>
+														<a class="dropdown-item" href="#">Download gabarito</a>
+														<div class="dropdown-divider"></div>
+														<a class="dropdown-item" href="#">Ranking do simulado</a>
+													</div>
+												</div>
+											</td>								
+										</tr>
 										</tr>
 							</tbody>
 						</table>
