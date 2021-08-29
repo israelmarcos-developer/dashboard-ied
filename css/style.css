@@ -1,8 +1,13 @@
 .logo {
-  height: 6rem;
-  width: 15rem;
+  height: 4rem;
+  width: 12rem;
   margin-top: 1rem;
-  margin-left: 0.3rem;
+  margin-left: 1.7rem;
+}
+.espass{
+  width: 10rem;
+  right: 10rem;
+
 }
 .row-simulado{
   margin-top: 15rem;
@@ -129,4 +134,12 @@ scroll-page {
   margin-top: 12rem;
 
 
+}
+
+.tabela-position-finan{
+  margin-top: 12rem;
+}
+
+.tabela-loja-position{
+  margin-top: 12rem;
 }
